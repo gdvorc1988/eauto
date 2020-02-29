@@ -1,0 +1,22 @@
+.sidebar-menu {
+    padding: 20px 0;
+    list-style-type: none;
+
+    &__link {
+        display: block;
+        padding: 7px 1.5rem;
+        font-size: 15px;
+        color: #6c757d;
+
+        &:hover {
+            background: #f2f2f2;
+        }
+
+        &_current {
+            box-shadow: inset 3px 0 #e52727;
+            color: #000;
+            font-weight: 500;
+
+        }
+    }
+}

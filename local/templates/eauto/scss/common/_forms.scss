@@ -1,0 +1,13 @@
+.form-row  {
+    position: relative;
+    margin-bottom: 25px;
+    &_half {
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 25px;
+        
+        &:last-child {
+            float: right;
+        }
+    }
+}

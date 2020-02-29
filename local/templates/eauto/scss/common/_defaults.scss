@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    font: 14px/18px $reg;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    background: #f4f4f4;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    transition: border .1s;
+
+    &.link, .link & {
+        border-bottom: 1px solid rgba(0,0,0,.3);
+        &:hover {
+            color: #fc534e;
+            border: none;
+        }
+    }
+
+    &.mobile-link {
+        border-bottom: 1px solid transparent;
+
+    }
+}
+
+a[href^=tel] {
+    text-decoration:inherit;
+    color: inherit;
+ }
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+ul {
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+li {
+    // list-style-type: none;
+}
+
+p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+
+input,
+select,
+textarea,
+button {
+    outline: none;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    -webkit-appearance: none;
+    border-radius: none;
+}
+
+b,
+strong {
+    font-family: $reg;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}

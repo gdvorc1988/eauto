@@ -1,0 +1,145 @@
+/**Top menu**/
+
+.catalog-drop {
+    &__arrow {
+        position: absolute;
+        width: 31px;
+        height: 21px;
+        pointer-events: none;
+        bottom: 100%;
+        overflow: hidden;
+
+        &:before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 7px;
+            height: 7px;
+            top: 100%;
+            margin-top: -3.5px;
+            background-color: #fff;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+            border-radius: 1px;
+            left: 50%;
+            margin-left: -3.5px;
+            transform: rotate(45deg) translateX(-.5px)
+        }
+    }
+}
+
+/*Links*/
+
+.catalog-drop .sub-item a {
+    display: block;
+    padding: 10px 29px 10px 20px;
+    text-decoration: none;
+    text-align: left;
+
+    &:hover {
+        background: #f2f2f2;
+    }
+}
+
+
+.catalog-drop li {
+    float: left;
+    list-style: none;
+}
+
+/*Item-parents*/
+.catalog-drop a.parent {
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 7px;
+        height: 11px;
+        right: 10px;
+        top: 13px;
+        background: url(img/arrow-right.svg) center right no-repeat;
+        opacity: .3;
+    }
+}
+
+/*Denied items*/
+.catalog-drop a.denied {
+    background: url(images/lock.gif) center right no-repeat;
+}
+
+/*Child-items: hover*/
+.catalog-drop .sub-item li:hover,
+.catalog-drop li.jshover {
+    background: #f2f2f2;
+    color: #fff;
+}
+
+/*Child-items selected*/
+.catalog-drop li.item-selected {
+    background: #f2f2f2;
+    color: $red-primary;
+}
+
+/*Sub-menu box*/
+.catalog-drop li ul {
+    position: absolute;
+    top: auto;
+    display: none;
+    z-index: 999;
+    height: auto;
+    width: 250px;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .2);
+    border-bottom: 0;
+    padding: 10px 0;
+}
+
+.catalog-drop li ul.menu-item-avtoaksessuary {
+    top: 48px;
+}
+
+/*Sub-menu item box*/
+.catalog-drop li li {
+    width: 100%;
+}
+
+/*Item link*/
+.catalog-drop li ul a {
+    text-align: left;
+    padding: 7px 29px 7px 20px;
+}
+
+.catalog-drop li ul ul {
+    margin: -48px 0 0 248px;
+}
+
+.catalog-drop li:hover ul ul,
+.catalog-drop li.jshover ul ul,
+.catalog-drop li:hover ul ul ul,
+.catalog-drop li.jshover ul ul ul,
+.catalog-drop li:hover ul ul ul ul,
+.catalog-drop li.jshover ul ul ul ul,
+.catalog-drop li:hover ul ul ul ul ul,
+.catalog-drop li.jshover ul ul ul ul ul {
+    display: none;
+}
+
+.catalog-drop li:hover ul,
+.catalog-drop li.jshover ul,
+.catalog-drop li li:hover ul,
+.catalog-drop li li.jshover ul,
+.catalog-drop li li li:hover ul,
+.catalog-drop li li li.jshover ul,
+.catalog-drop li li li li:hover ul,
+.catalog-drop li li li li.jshover ul,
+.catalog-drop li li li li li:hover ul,
+.catalog-drop li li li li li.jshover ul {
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .catalog-drop {
+        display: none;
+    }
+}

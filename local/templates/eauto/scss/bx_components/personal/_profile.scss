@@ -1,0 +1,90 @@
+.personal {
+
+	/* personal items menu */
+	&__item_list {
+		width:100%;
+	}
+
+	&__item {
+		width:40%;
+		display:inline-block;
+		text-transform: uppercase;
+		color:#fff;
+		font-size:15px;
+		margin:10px 20px;
+	}
+
+	&__item a {
+		width:100%;
+		display:block;
+		background:#19A1EF;
+		padding:20px 0px;
+		text-align:center;
+		color:#fff;
+		border-radius: 10px;
+	}
+
+	&__item a:hover {
+		background:rgb(43, 172, 247);
+	}
+
+	&__item a:active {
+		background:rgb(11, 161, 248);
+	}
+}
+
+/* user account profile */
+.bx_profile .main-profile-block-date-info {
+	margin-bottom: 15px;
+}
+
+.bx_profile .main-profile-form-password-annotation {
+	margin-top: 15px;
+	margin-bottom: 0;
+	color: grey;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.bx_profile .main-profile-social-block {
+	margin-top: 40px;
+}
+
+.main-profile-block-shown {
+	margin-bottom:20px;
+	width:50%;
+	@media (max-width: $phone) {
+		width:100%;
+	}
+}
+
+.profile-inp {
+	margin-top:15px;
+}
+
+.p-mob-menu {
+	border-bottom:1px solid #ebebeb;
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-style: normal;
+	color:#999;
+	width:100%;
+
+	&__item {
+		display:inline-block;
+		width:49%;
+	}
+
+	&__item a {
+		text-align:center;
+		display: block;
+		padding:18px 0;
+		color:#999;
+	}
+
+	&__active {
+		color:#000 !important;
+		border-bottom:1px solid #FF3333;
+		font-weight: 500;
+	}
+}

@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    font-size: 16px !important;
+    padding: 12px 24px !important;
+    border-radius: 2px;
+    border: none;
+    transition: box-shadow .2s;
+    cursor: pointer;
+    text-align: center;
+
+    &_red {
+        background-color: $red-primary;
+        color: #fff;
+
+        &:hover,
+        &:active {
+            background-color: $black-secondary;
+            color: #FFFFFF;
+        }
+    }
+
+    &_block {
+        width: 100%;
+    }
+    &_mobile-block {
+        @media (max-width: $phone) {
+            width: 100%;
+        }
+    }
+}

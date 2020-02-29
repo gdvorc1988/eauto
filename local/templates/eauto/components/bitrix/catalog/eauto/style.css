@@ -1,0 +1,13 @@
+.page-left-side {
+	width: 25%;
+	float:left;
+}
+
+.page-right-side {
+	width:75%;
+	float:right;
+}
+
+.clear {
+	clear:both;
+}

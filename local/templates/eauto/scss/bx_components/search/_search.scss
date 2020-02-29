@@ -1,0 +1,36 @@
+.search-page {
+    
+    margin:10px 0;
+    min-height:300px;
+
+    &__input {
+        margin:20px 0;
+        height:44px;
+        border:1px solid rgba(0, 0, 0, 0.15);
+        background:#fff;
+        position:relative;
+        // width:50%;
+        // border-radius: 2px;
+    }
+
+    &__input input[type='text']{
+        height:40px;
+        width:90%;
+        background:none;
+        border:0;
+        padding-left:10px;
+    }
+
+    .sort-by-param {
+        margin:20px 0;
+    }
+}
+
+a.search-page-params {
+	border-bottom: 1px dashed blue;
+	text-decoration: none;
+}
+div.search-page-params {
+	margin-top: 6px;
+}
+.search-item-rate {font-size: 11px;}

@@ -1,0 +1,33 @@
+.badge {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+    z-index: 0;
+    height: 18px;
+    padding: 4px 14px 2px;
+    color: #fff;
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        border-radius: 2.5px;
+        transform-origin: center;
+        left: 3.5px;
+        right: 3.5px;
+        transform: skewX(-20deg);
+    }
+
+    &_red:before {
+        background: $red-secondary;
+    }
+
+    &_blue:before {
+        background: $blue-secondary;
+    }
+}

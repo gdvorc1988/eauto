@@ -1,0 +1,121 @@
+.product-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.product-body {
+    width: calc(100% - 380px);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    @media (max-width: $phone) {
+        flex-wrap: wrap;
+        padding: 15px;
+	}
+}
+
+.product-gallery {
+    min-width: 400px;
+    width: 400px;
+    margin-right: 30px;
+    text-align: center;
+    @media (max-width: $phone) {
+		min-width: auto;
+        width: 100%;
+        margin-right: 0;
+	}
+}
+
+.product-info {
+    width: 340px;
+    position: relative;
+    @media (max-width: $phone) {
+        width: 100%;
+        margin-top: 20px;
+	}
+    &__labels {
+        position: absolute;
+        top: -9px;
+        left: 28px;
+    }
+    &__label {
+        display: inline-block;
+    }
+    &__price {
+        font-size:30px;
+        font-weight:bold;
+        margin-top:20px;
+    }
+    &__delivery {
+        margin: 15px 0 25px;
+        line-height: 15px;
+        padding: 4px 12px;
+        background: rgba(255, 211, 51, .6);
+        color: #99752e;
+        font-size: 12px;
+        border-radius: 12px;
+        display: inline-block;
+        &_stock {
+            color: #44782a;
+            background: #E2F2DA;
+        }
+    }
+}
+
+.product-meta {
+    &__row {
+        display: flex;
+        padding: 6px 0;
+        
+        &:not(:first-child) {
+            border-top: 1px solid #ebebeb;
+        }
+    }
+    &__col {
+        width: 50%;
+        
+        padding-right: 12px;
+        &:first-child {
+            font-weight: 500;
+        }
+    }
+    
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    &__btn {
+        width: 180px;
+    }
+    &__one-click {
+        display: inline-block;
+        font-size: 13px;
+        transition: background .15s, fill .15s;
+        padding: 7px 10px 5px 9px;
+        cursor: pointer;
+        border-radius: 2px;
+        margin-top: 10px;;
+        &:hover {
+            background: #f5f5f5;
+        }
+        &-icon {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin: 0 5px 0 0;
+            position: relative;
+            top: 4px;
+        }
+    }
+}
+
+
+.product-comments {
+    width: calc(100% - 380px);
+    margin-top: 30px;
+    @media (max-width: $phone) {
+        width: 100%;
+	}
+}

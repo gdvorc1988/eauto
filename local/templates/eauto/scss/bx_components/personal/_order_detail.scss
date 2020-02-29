@@ -1,0 +1,41 @@
+.order-list {
+	width:100%;
+	overflow-x: auto;
+	&__title {
+		max-width: 300px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	&__price {
+		text-align: right;
+	}
+	table {
+		width:100%;
+		font-size: 14px;
+		line-height: 18px;
+		font-style: normal;
+		font-weight: normal;
+		border-collapse: collapse;
+	
+		tr td {
+			padding:12px;
+			border-bottom: 1px solid #EBEBEB;
+		}
+
+		@media (max-width: $phone) {
+			min-width:674px;
+			
+		}
+	}
+	
+
+}
+
+.order-detail-title {
+	margin: 30px 0 20px;
+}
+
+.order-detail-row {
+	margin: 12px 0;
+}

@@ -1,0 +1,13 @@
+.product-info__price{
+    width: 170px;
+    display: inline-block;
+}
+
+.base_price{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #999999;
+}

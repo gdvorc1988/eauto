@@ -1,0 +1,44 @@
+.blog-comment-fields {
+    padding: 28px !important;
+    background: none !important;
+    @media (max-width: $phone) {
+		padding: 0 !important;
+	}
+}
+
+.feed-add-post-text {
+    padding: 0 !important;
+    border: 1px solid #ebebeb !important;
+}
+
+.bxhtmled-toolbar-cnt {
+    background: none !important;
+}
+
+.blog-comment-field-user-sep {
+    display: none !important;
+}
+
+.blog-comment-field {
+    float: none !important;
+    margin-bottom: 15px;
+}
+
+.bx-catalog-tab-container {
+    padding:28px;
+    @media (max-width: $phone) {
+        padding: 15px;
+	}
+}
+
+div.blog-comment-field-author input,
+div.blog-comment-field-email input,
+div.blog-comment-field-captcha input {
+    height: 40px;
+    border:1px solid #ebebeb;
+    padding-left:10px;
+}
+
+div.blog-comment-field-author,div.blog-comment-field-email {
+    width: 100% !important;
+}

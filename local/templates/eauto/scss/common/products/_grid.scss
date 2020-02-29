@@ -1,0 +1,278 @@
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-table-view .product-item, .product-item {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    margin-bottom: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    transition: all .15s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .09);
+    &_4 {
+        width: 23.5%;
+        margin-right: 2%;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+    &_5 {
+        width: 18%;
+        margin-right: 2.5%;
+
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: $phone) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+    }
+
+    &__body {
+        @media (max-width: $phone) {
+            width: calc(100% - 80px);
+            padding-left: 10px;
+        }
+    }
+    /*убрать*/
+    .sc-item-box {
+        width: 220px;
+        height: 220px;
+        text-align: center;
+        vertical-align: middle;
+        display: table-cell;
+        @media (max-width: $phone) {
+            display: flex;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+
+    &__img {
+        width: auto;
+        max-width: 100%;
+        max-height: 190px;
+        @media (max-width: $phone) {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100px;
+        }
+    }
+
+    &__title {
+        display: block;
+        min-height: 54px;
+        margin-bottom: 10px;
+        &:hover {
+            color: $red-secondary;
+        }
+        @media (max-width: $phone) {
+            margin-bottom: 5px;
+            font-size: 13px;
+            min-height: auto;
+        }
+    }
+
+    &__price-container {
+        margin-top: 30px;
+    }
+
+    &__price-current {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__price-old {
+        color: #999;
+        text-decoration-line: line-through;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cart {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        fill: rgba(0, 0, 0, .3);
+        &:hover  {
+            fill: $red-secondary;
+        }
+    }
+
+    &__labels {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        @media (max-width: $phone) {
+            left: 10px;
+            top: -7px;
+        }
+    }
+
+    &__label {
+        margin-bottom: 5px;
+        @media (max-width: $phone) {
+            display: inline-block;
+        }
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    &__articul {
+        color: #999;
+        font-size: 12px;
+        max-width: 110px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__stock {
+        line-height: 15px;
+        padding: 5px 10px ;
+        color: #44782a;
+        font-size: 10px;
+        background: #E2F2DA;
+        border-radius: 12px;
+        display: inline-block;
+    }
+
+}
+
+.catalog-list-view .product-item {
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
+    background: #fff;
+    transition: all .15s;    
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding: 10px 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .09);
+    @media (max-width: $phone) {
+        padding: 10px;
+    }
+
+    &__body {
+        width: calc(100% - 110px);
+        padding-left: 30px;
+        @media (max-width: $phone) {
+            width: calc(100% - 90px);
+            padding-left: 10px;
+        }
+
+    }
+    .sc-item-box {        
+        display: flex;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        @media (max-width: $phone) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100px;
+    }
+  
+    &__title {
+        display: block;
+        min-height: auto;
+        margin-bottom: 10px;
+        &:hover {
+            color: $red-secondary;
+        }
+    }
+
+    &__price-container {
+        margin-top: 30px;
+    }
+
+    &__price-current {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__price-old {
+        color: #999;
+        text-decoration-line: line-through;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cart {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        &:hover .icon-svg {
+            fill: $red-secondary;
+        }
+    }
+
+    &__labels {
+        position: absolute;
+        top: -7px;
+        left: 25px;
+        @media (max-width: $phone) {
+            left: 10px;
+        }
+    }
+
+    &__label {
+        display: inline-block;
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+    &__articul {
+        color: #999;
+        font-size: 12px;
+        max-width: 110px;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__stock {
+        line-height: 15px;
+        padding: 5px 10px ;
+        color: #44782a;
+        font-size: 10px;
+        background: #E2F2DA;
+        border-radius: 12px;
+        display: inline-block;
+    }
+
+}

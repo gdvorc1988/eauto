@@ -1,0 +1,22 @@
+.filters-section {
+    padding: 28px 25px 14px;
+    border-bottom: 1px solid #EBEBEB;
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    &__row {
+        margin: 15px 0;
+    }
+}
+
+._show_1e.wrap_mW {
+    z-index: 998 !important;
+}
+
+.mobile-filter-submit {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}

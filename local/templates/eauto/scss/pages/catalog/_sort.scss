@@ -1,0 +1,95 @@
+.sort-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+
+    @media (max-width: $phone) {
+        width: 100%;
+    }
+}
+
+.sort-items-group {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    position: relative;
+
+    @media (max-width: $phone) {
+        margin: 15px 0 0 0;
+    }
+
+    &_view {
+        @media (max-width: $phone) {
+            display: none;
+        }
+    }
+
+    &__label {
+        margin-right: 3px;
+    }
+}
+
+.sort-item {
+    @extend .block;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 1px;
+    cursor: pointer;
+
+    @media (max-width: $phone) {
+        margin: 0 5px 0 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        color: $red-secondary;
+    }
+
+    &_active {
+        background: $red-secondary !important;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &_view {
+        padding: 8px;
+    }
+
+    &__arrow {
+        display: none;
+        width: 12px;
+        height: 12px;
+        margin-left: 8px;
+
+    }
+
+    &_active &__arrow,
+    &_active &__view-icon {
+        fill: #fff;
+        display: block;
+    }
+
+    &_desc &__arrow {
+        transform: rotate(-90deg);
+    }
+
+    &_asc &__arrow {
+        display: block;
+        transform: rotate(90deg);
+    }
+
+    &__view-icon {
+        width: 18px;
+        height: 18px;
+        fill: #000;
+    }
+}

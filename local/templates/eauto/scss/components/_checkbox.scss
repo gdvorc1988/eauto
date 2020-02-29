@@ -1,0 +1,34 @@
+.option-checkbox {
+    display: none;
+}
+
+.option-checkbox:checked+.option-label::before {
+    border-color: $red-secondary;
+    background-color: $red-secondary;
+    background-image: url("../img/input-checkbox-checked.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.option-label {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.option-checkbox+.option-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: 0 8px 0 0;
+    border: 1px solid #c4c4c4;
+}

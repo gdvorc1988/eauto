@@ -1,0 +1,71 @@
+.order {
+
+	&__input {
+		width:300px;
+		margin-top:15px;
+	}
+
+	&__input_wide {
+		width:500px;
+		margin-top:15px;
+	}
+
+	@media (max-width: $phone) {
+		&__input,
+		&__input_wide {
+			width:100%;
+		}
+	}
+}
+
+.install__input {
+	position: relative;
+	margin:25px 0;
+}
+
+.f-checkbox {
+	display:none;
+}
+
+.f-label {
+	padding-left:20px;
+	font-size:12px;
+	cursor:pointer;
+}
+
+.f-checkbox + .f-label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0px;
+	display: block;
+	background-color: #fff;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 14px;
+	margin: 0 8px 0 0;
+	border: 1px solid #c4c4c4;
+}
+
+.f-checkbox:checked+.f-label::before {
+	border-color: #f33;
+	background-color: #f33;
+	background-image: url(/local/templates/eauto/img/input-checkbox-checked.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.dlv-prop {
+	display: none;
+	margin-top:30px;
+}
+
+.dlv-prop.dlvp-active {
+	display: block;
+}
+
+.delivery-inputs label {
+	display: inline-block;
+	margin-right:15px;
+}

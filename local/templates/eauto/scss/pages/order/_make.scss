@@ -1,0 +1,30 @@
+.make-order {
+    padding: 35px 0;
+    &__title {
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+}
+
+label[for=prop_22] {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &:before {
+        top: 5px !important;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 157px;
+        height: 28px;
+        background-image: url(/local/templates/eauto/img/ugonanet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 10px;
+        @media (max-width: $phone) {
+            margin: 0px;
+        }
+    }
+}
+

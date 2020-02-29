@@ -1,0 +1,28 @@
+.limit-dropdown {
+    @extend .block;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 2;
+    background: #fff;
+    padding: 2px 0;
+    transform: translateY(5px);
+    transition: transform .2s;
+    .limit-dropdown-visible & {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    @media (max-width: $phone) {
+        right: 5px;
+    }
+    &__item {
+        font-size: 13px;
+        padding: 6px 8px;
+        text-align: center;
+        
+    }
+
+}

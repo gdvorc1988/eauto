@@ -1,0 +1,54 @@
+.input-number {
+    position: relative;
+    &__input {
+        display: block;
+        width: 80px;
+        text-align: center;
+        height: 42px;
+        padding: 9.5px 12px;
+        font-size: 18px;
+        line-height: 21px;
+        border-radius: 2px;
+        background-clip: border-box;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,background .15s ease-in-out;
+        color: #262626;
+        background-color: #ebebeb;
+        border: 1px solid #ebebeb;
+    }
+    &__add, &__sub {
+        position: absolute;
+        height: 100%;
+        width: 24px;
+        top: 0;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        opacity: .3;
+        transition: opacity .18s;
+        &:after, &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background: currentColor;
+        }
+    }
+    &__add:before, &__sub:before {
+        width: 8px;
+        height: 2px;
+    }
+
+    &__add:after {
+        width: 2px;
+        height: 8px;
+    }
+
+    &__add {
+        right: 1px;
+    }
+
+}
